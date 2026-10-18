@@ -43,31 +43,31 @@ window.addEventListener('scroll', () => {
 });
 
 // Theme Toggle
-themeToggle.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+// themeToggle.addEventListener('click', () => {
+//     const currentTheme = document.documentElement.getAttribute('data-theme');
+//     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
+//     document.documentElement.setAttribute('data-theme', newTheme);
+//     localStorage.setItem('theme', newTheme);
     
-    // Update icon
-    const icon = themeToggle.querySelector('i');
-    icon.className = newTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+//     // Update icon
+//     const icon = themeToggle.querySelector('i');
+//     icon.className = newTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
     
-    // Update navbar background
-    setTimeout(() => {
-        const currentScrollY = window.scrollY;
-        if (currentScrollY > 100) {
-            navbar.style.background = newTheme === 'dark' 
-                ? 'rgba(26, 47, 26, 0.98)' 
-                : 'rgba(248, 253, 248, 0.98)';
-        } else {
-            navbar.style.background = newTheme === 'dark' 
-                ? 'rgba(26, 47, 26, 0.95)' 
-                : 'rgba(248, 253, 248, 0.95)';
-        }
-    }, 100);
-});
+//     // Update navbar background
+//     setTimeout(() => {
+//         const currentScrollY = window.scrollY;
+//         if (currentScrollY > 100) {
+//             navbar.style.background = newTheme === 'dark' 
+//                 ? 'rgba(26, 47, 26, 0.98)' 
+//                 : 'rgba(248, 253, 248, 0.98)';
+//         } else {
+//             navbar.style.background = newTheme === 'dark' 
+//                 ? 'rgba(26, 47, 26, 0.95)' 
+//                 : 'rgba(248, 253, 248, 0.95)';
+//         }
+//     }, 100);
+// });
 
 // Load saved theme
 const savedTheme = localStorage.getItem('theme') || 'light';
