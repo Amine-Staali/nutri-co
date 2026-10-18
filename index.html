@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalel Staali - Nutritionniste certifiée</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Dalel Staali, nutritionniste certifiée. Transformez votre santé grâce à une alimentation personnalisée et une approche globale du bien-être.">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=900&h=900&fit=crop&auto=format" as="image">
+</head>
+<body>
+    <!-- Organic Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="wellness-logo">
+                <div class="leaf-animation">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="loading-text">Prenez soin de votre parcours bien-être...</div>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-leaf logo-icon"></i>
+                <span class="logo-text">Dalel Staali</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#approach" class="nav-link">Ma méthode</a></li>
+                <li><a href="#testimonials" class="nav-link">Témoignages</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Background Elements -->
+    <div class="bg-elements">
+        <div class="floating-leaf leaf-1">🍃</div>
+        <div class="floating-leaf leaf-2">🌿</div>
+        <div class="floating-leaf leaf-3">🍃</div>
+        <div class="floating-leaf leaf-4">🌱</div>
+        <div class="floating-leaf leaf-5">🌿</div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-certificate"></i>
+                        <span>Nutritionniste certifiée</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Transformez votre santé grâce à
+                        <span class="gradient-text">une nutrition personnalisée</span>
+                    </h1>
+                    <p class="hero-description">
+                        Bienvenue ! Je suis Dalel Staali, nutritionniste certifiée avec plus de 8 ans d'expérience.
+                        J'accompagne chacun vers ses objectifs grâce à une nutrition fondée sur la science et une approche globale.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Clients accompagnés</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">8+</div>
+                            <div class="stat-label">Ans d'expérience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Taux de réussite</div>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-calendar-alt"></i>
+                            Réserver une consultation
+                        </a>
+                        <a href="#services" class="btn btn-secondary">
+                            <i class="fas fa-leaf"></i>
+                            Découvrir les services
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="image-background"></div>
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=900&h=900&fit=crop&auto=format" alt="Alimentation saine et colorée" class="hero-img">
+                        <div class="image-decoration">
+                            <div class="decoration-circle circle-1"></div>
+                            <div class="decoration-circle circle-2"></div>
+                            <div class="decoration-circle circle-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">À propos</span>
+                <h2 class="section-title">Votre partenaire bien-être</h2>
+                <p class="section-description">
+                    Une expertise scientifique et un accompagnement humain vers une santé durable
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <h3>Passionnée par votre santé</h3>
+                        <p>
+                            Mon parcours dans la nutrition a commencé par ma propre transformation. Après avoir connu
+                            des troubles digestifs et une fatigue chronique, j'ai découvert l'impact profond d'une nutrition personnalisée.
+                        </p>
+                    </div>
+                    <div class="credentials">
+                        <h4>Diplômes et certifications</h4>
+                        <ul class="credentials-list">
+                            <li>
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <strong>Master en nutrition clinique</strong>
+                                    <span>Université des sciences de la santé, 2016</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-certificate"></i>
+                                <div>
+                                    <strong>Nutritionniste certifiée (CNS)</strong>
+                                    <span>Conseil de certification des spécialistes en nutrition</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-award"></i>
+                                <div>
+                                    <strong>Praticienne en médecine fonctionnelle</strong>
+                                    <span>Institut de médecine fonctionnelle</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-heart"></i>
+                                <div>
+                                    <strong>Coach en nutrition intégrative</strong>
+                                    <span>Institut de nutrition intégrative</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-specialties">
+                        <h4>Domaines d'expertise</h4>
+                    <div class="specialties-grid">
+                        <div class="specialty-card">
+                            <div class="specialty-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h5>Santé métabolique</h5>
+                            <p>Gestion du diabète, équilibre du poids et récupération métabolique</p>
+                        </div>
+                        <div class="specialty-card">
+                            <div class="specialty-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h5>Santé intestinale et mentale</h5>
+                            <p>Bien-être digestif, microbiote et soutien de la santé mentale</p>
+                        </div>
+                        <div class="specialty-card">
+                            <div class="specialty-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <h5>Nutrition sportive</h5>
+                            <p>Performance et récupération pour les sportifs et personnes actives</p>
+                        </div>
+                        <div class="specialty-card">
+                            <div class="specialty-icon">
+                                <i class="fas fa-baby"></i>
+                            </div>
+                            <h5>Santé féminine</h5>
+                            <p>Équilibre hormonal, fertilité et nutrition prénatale et postnatale</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Services</span>
+                <h2 class="section-title">Comprehensive Nutrition Solutions</h2>
+                <p class="section-description">
+                    Tailored programs designed to meet your unique health goals and lifestyle
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card featured">
+                    <div class="service-badge">Most Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>1-on-1 Nutrition Consultation</h3>
+                    <p>Comprehensive assessment and personalized nutrition plan development</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 90-minute initial consultation</li>
+                        <li><i class="fas fa-check"></i> Detailed health history review</li>
+                        <li><i class="fas fa-check"></i> Custom meal planning</li>
+                        <li><i class="fas fa-check"></i> Supplement recommendations</li>
+                        <li><i class="fas fa-check"></i> 4 weeks of follow-up support</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price">$295</span>
+                        <span class="price-note">per session</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Book Now</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Meal Planning & Prep</h3>
+                    <p>Weekly customized meal plans with shopping lists and prep guides</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 7-day meal plans</li>
+                        <li><i class="fas fa-check"></i> Grocery shopping lists</li>
+                        <li><i class="fas fa-check"></i> Prep instructions</li>
+                        <li><i class="fas fa-check"></i> Recipe modifications</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price">$149</span>
+                        <span class="price-note">per week</span>
+                    </div>
+                    <a href="#contact" class="btn btn-secondary">Learn More</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Functional Testing</h3>
+                    <p>Advanced laboratory testing to identify root causes of health issues</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Comprehensive metabolic panel</li>
+                        <li><i class="fas fa-check"></i> Gut microbiome analysis</li>
+                        <li><i class="fas fa-check"></i> Food sensitivity testing</li>
+                        <li><i class="fas fa-check"></i> Nutrient deficiency assessment</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price">$485</span>
+                        <span class="price-note">comprehensive package</span>
+                    </div>
+                    <a href="#contact" class="btn btn-secondary">Learn More</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Group Programs</h3>
+                    <p>8-week intensive group coaching programs for sustainable lifestyle change</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Weekly group sessions</li>
+                        <li><i class="fas fa-check"></i> Peer support community</li>
+                        <li><i class="fas fa-check"></i> Educational workshops</li>
+                        <li><i class="fas fa-check"></i> Accountability tracking</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price">$197</span>
+                        <span class="price-note">8-week program</span>
+                    </div>
+                    <a href="#contact" class="btn btn-secondary">Join Program</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Virtual Consultations</h3>
+                    <p>Convenient online sessions for clients anywhere in the world</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Video call consultations</li>
+                        <li><i class="fas fa-check"></i> Digital meal plans</li>
+                        <li><i class="fas fa-check"></i> Online progress tracking</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price">$245</span>
+                        <span class="price-note">per session</span>
+                    </div>
+                    <a href="#contact" class="btn btn-secondary">Book Virtual</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Corporate Wellness</h3>
+                    <p>Workplace nutrition seminars and employee wellness programs</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Lunch & learn sessions</li>
+                        <li><i class="fas fa-check"></i> Wellness challenges</li>
+                        <li><i class="fas fa-check"></i> Cafeteria consulting</li>
+                        <li><i class="fas fa-check"></i> Employee health screenings</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price">Custom</span>
+                        <span class="price-note">pricing</span>
+                    </div>
+                    <a href="#contact" class="btn btn-secondary">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section id="approach" class="approach">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ma méthode</span>
+                <h2 class="section-title">Une philosophie globale du bien-être</h2>
+                <p class="section-description">
+                    A comprehensive approach that addresses the whole person, not just symptoms
+                </p>
+            </div>
+            <div class="approach-content">
+                <div class="approach-philosophy">
+                    <div class="philosophy-text">
+                        <h3>Science-Based, Compassion-Driven</h3>
+                        <p>
+                            I believe that optimal health is achieved through a perfect balance of evidence-based 
+                            nutrition science and deep understanding of each individual's unique circumstances, 
+                            preferences, and lifestyle challenges.
+                        </p>
+                        <blockquote>
+                            "Nutrition is not one-size-fits-all. Your journey to wellness should be as unique as you are."
+                            <cite>- Dalel Staali</cite>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="approach-steps">
+                    <div class="step-item">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h4>Listen & Understand</h4>
+                            <p>Deep dive into your health history, goals, and current challenges to create a complete picture</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h4>Analyze & Assess</h4>
+                            <p>Review laboratory results, dietary patterns, and lifestyle factors to identify root causes</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h4>Design & Implement</h4>
+                            <p>Create a personalized nutrition plan that fits seamlessly into your daily routine</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h4>Support & Adjust</h4>
+                            <p>Provide ongoing guidance and make adjustments based on your progress and feedback</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Témoignages</span>
+                <h2 class="section-title">Histoires de réussite</h2>
+                <p class="section-description">
+                    Real transformations from real people who trusted me with their wellness journey
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>                        <blockquote>
+                        "Dalel completely transformed my relationship with food. I lost 35 pounds and my energy 
+                        levels are through the roof. Her approach is sustainable and actually enjoyable!"
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>Maria Rodriguez</strong>
+                            <span>Marketing Executive</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card featured">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>                        <blockquote>
+                        "After years of digestive issues, Dalel's functional approach finally gave me answers. 
+                        The gut healing protocol she designed changed my life completely."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>David Chen</strong>
+                            <span>Software Engineer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>                        <blockquote>
+                        "As an athlete, I needed someone who understood performance nutrition. Dalel's sports 
+                        nutrition program helped me achieve my personal best marathon time!"
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <strong>Jessica Thompson</strong>
+                            <span>Marathon Runner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Conseils récents</span>
+                <h2 class="section-title">Blog nutrition</h2>
+                <p class="section-description">
+                    Evidence-based articles and practical tips for your wellness journey
+                </p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card featured">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=250&fit=crop" alt="Gut Health Foods">
+                        <div class="blog-category">Gut Health</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#" class="blog-link" data-blog="gut-health">The Ultimate Guide to Healing Your Gut Naturally</a></h3>
+                        <p>Discover the science-backed strategies for restoring digestive health and optimizing your microbiome...</p>
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="fas fa-calendar"></i> January 15, 2025</span>
+                            <span class="blog-read-time"><i class="fas fa-clock"></i> 8 min read</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=200&fit=crop" alt="Meal Prep">
+                        <div class="blog-category">Meal Planning</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#" class="blog-link" data-blog="meal-prep">Meal Prep Mastery: 5 Strategies for Busy Professionals</a></h3>
+                        <p>Time-saving techniques that will revolutionize your weekly meal planning...</p>
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="fas fa-calendar"></i> January 10, 2025</span>
+                            <span class="blog-read-time"><i class="fas fa-clock"></i> 6 min read</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=200&fit=crop" alt="Anti-inflammatory Foods">
+                        <div class="blog-category">Anti-Inflammatory</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#" class="blog-link" data-blog="anti-inflammatory">10 Powerful Anti-Inflammatory Foods to Add to Your Diet</a></h3>
+                        <p>Fight chronic inflammation naturally with these nutrient-dense superfoods...</p>
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="fas fa-calendar"></i> January 5, 2025</span>
+                            <span class="blog-read-time"><i class="fas fa-clock"></i> 5 min read</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="blog-cta">
+                <a href="#" class="btn btn-secondary">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Prêt à transformer votre santé ?</h2>
+                <p class="section-description">
+                    Commencez aujourd'hui votre parcours bien-être personnalisé
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Adresse du cabinet</h4>
+                            <p>123 Wellness Avenue<br>Health District, CA 90210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Téléphone</h4>
+                            <p>(555) 123-WELL<br>Lun-Ven, 9 h-18 h PST</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>E-mail</h4>
+                            <p>hello@dalelstaali.com<br>Réponse sous 24 heures</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h4>Follow My Journey</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form contact-cta">
+                    <h3>Échangeons sur vos objectifs</h3>
+                    <p>Écrivez-moi directement par e-mail pour discuter de votre situation et choisir l'accompagnement adapté.</p>
+                    <a class="btn btn-primary" href="mailto:hello@dalelstaali.com">
+                        <i class="fas fa-envelope"></i>
+                        Envoyer un e-mail
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>Dalel Staali</span>
+                    </div>
+                    <p>Empowering individuals to achieve optimal health through personalized nutrition and holistic wellness approaches.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">1-on-1 Consultations</a></li>
+                        <li><a href="#services">Meal Planning</a></li>
+                        <li><a href="#services">Functional Testing</a></li>
+                        <li><a href="#services">Group Programs</a></li>
+                        <li><a href="#services">Virtual Sessions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#blog">Blog Articles</a></li>
+                        <li><a href="#">Meal Plans</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Nutrition Guides</a></li>
+                        <li><a href="#">Supplements</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Info</a></li>
+                        <li><a href="#">Book Consultation</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Dalel Staali. All rights reserved.</p>
+                </div>                
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Blog Popup Modal -->
+    <div id="blog-modal" class="blog-modal">
+        <div class="blog-modal-overlay"></div>
+        <div class="blog-modal-content">
+            <div class="blog-modal-header">
+                <button class="blog-modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="blog-modal-body">
+                <div class="blog-modal-meta">
+                    <span class="blog-modal-category"></span>
+                    <span class="blog-modal-date"></span>
+                    <span class="blog-modal-read-time"></span>
+                </div>
+                <h1 class="blog-modal-title"></h1>
+                <div class="blog-modal-author">
+                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=160&h=160&fit=crop&auto=format" alt="Alimentation saine" class="author-avatar">
+                    <div class="author-info">
+                        <strong>Dalel Staali</strong>
+                        <span>Certified Nutritionist Specialist</span>
+                    </div>
+                </div>
+                <div class="blog-modal-image">
+                    <img src="" alt="" class="blog-featured-image">
+                </div>
+                <div class="blog-modal-text">
+                    <!-- Blog content will be inserted here -->
+                </div>
+                <div class="blog-modal-footer">
+                    <div class="blog-social-share">
+                        <h4>Share this article</h4>
+                        <div class="share-buttons">
+                            <button class="share-btn share-facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </button>
+                            <button class="share-btn share-twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </button>
+                            <button class="share-btn share-linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </button>
+                            <button class="share-btn share-copy">
+                                <i class="fas fa-link"></i>
+                                <span>Copy Link</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
