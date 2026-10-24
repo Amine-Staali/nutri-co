@@ -1,704 +1,253 @@
-```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dalel Staali Bel Hadj - Nutritionniste certifiée</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Balises méta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="color-scheme" content="light dark">
-    <meta name="description" content="Dalel Staali Bel Hadj, nutritionniste certifiée. Transformez votre santé grâce à une alimentation personnalisée et une approche globale du bien-être.">
-
-    <!-- Préchargement des ressources essentielles -->
-    <link rel="preload" href="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=900&h=900&fit=crop&auto=format" as="image">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nutritionniste Centre Urbain Nord Tunis — Dalel Staali Bel Hadj</title>
+  <meta name="description" content="Dalel Staali Bel Hadj, Nutritionniste Diététicienne au Centre Urbain Nord à Tunis. Suivi nutritionnel personnalisé, rééquilibrage alimentaire et gestion du poids. Contactez le cabinet Nutri&co sur WhatsApp.">
+  <meta property="og:title" content="Nutritionniste Centre Urbain Nord Tunis — Dalel Staali Bel Hadj">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Écran de chargement naturel -->
-    <div id="loading-screen">
-        <div class="loading-content">
-            <div class="wellness-logo">
-                <div class="leaf-animation">
-                    <i class="fas fa-leaf"></i>
-                </div>
-                <div class="loading-text">Prenez soin de votre parcours bien-être...</div>
-            </div>
-            <div class="loading-progress">
-                <div class="progress-bar">
-                    <div class="progress-fill"></div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-leaf logo-icon"></i>
-                <span class="logo-text">Dalel Staali Bel Hadj</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Accueil</a></li>
-                <li><a href="#about" class="nav-link">À propos</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#approach" class="nav-link">Ma méthode</a></li>
-                <li><a href="#testimonials" class="nav-link">Témoignages</a></li>
-                <li><a href="#blog" class="nav-link">Blog</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-controls">
-                <button class="theme-toggle" id="theme-toggle">
-                    <i class="fas fa-sun"></i>
-                </button>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="#accueil" class="nav__logo"><img src="https://dalel-connect-pro.lovable.app/assets/logo-transparent-BK4w3obT.png" alt="Nutri&co — Nutrition & Amincissement"></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#consultations">Consultations</a>
+      <a href="#accompagnement">Votre accompagnement</a>
+      <a href="#avis">Avis patients</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn--primary btn--sm nav__cta-mobile" href="https://wa.me/21690002090?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous">Rendez-vous</a>
     </nav>
+    <a class="btn btn--primary btn--sm nav__cta" href="https://wa.me/21690002090?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous">Rendez-vous</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
 
-    <!-- Éléments flottants en arrière-plan -->
-    <div class="bg-elements">
-        <div class="floating-leaf leaf-1">🍃</div>
-        <div class="floating-leaf leaf-2">🌿</div>
-        <div class="floating-leaf leaf-3">🍃</div>
-        <div class="floating-leaf leaf-4">🌱</div>
-        <div class="floating-leaf leaf-5">🌿</div>
+<main id="accueil">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <p class="pill">Nutrition &amp; bien-être · Tunis</p>
+        <p class="hero__name">Dalel Staali Bel Hadj</p>
+        <h1>Retrouvez l’équilibre<br>avec un <span>suivi</span><br><span>nutritionnel personnalisé</span></h1>
+        <p class="hero__role">Nutritionniste Diététicienne · <span dir="rtl" lang="ar">أخصائية تغذية</span><br>Centre Urbain Nord, Tunis</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="https://wa.me/21690002090?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.4-1.7a11.9 11.9 0 0 0 5.6 1.4c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.3zM12 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 0 1-1.5-5.2C2.1 6.4 6.5 2 12 2c2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.4 9.9-9.8 9.9zm5.4-7.400c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.500s1.1 2.9 1.2 3.100c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+            Prendre rendez-vous sur WhatsApp
+          </a>
+          <a class="btn btn--ghost" href="tel:+21690002090">Appeler</a>
+        </div>
+        <p class="hero__note">Une écoute attentive. Un accompagnement à votre rythme.</p>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__blob"></div>
+        <img class="hero__img" src="https://dalel-connect-pro.lovable.app/assets/portrait-modern-M6UORcgT.jpg" alt="Dalel Staali Bel Hadj, nutritionniste diététicienne à Tunis">
+        <div class="chip chip--rating"><span class="star">★</span><span><strong>4,4/5</strong> · 7 avis Google</span></div>
+        <div class="chip chip--place">Centre Urbain Nord</div>
+        <div class="chip chip--follow">Suivi personnalisé</div>
+        <div class="hero__card">
+          <div>
+            <strong>Dalel Staali Bel Hadj</strong>
+            <span>Nutritionniste Diététicienne · <span dir="rtl" lang="ar">أخصائية تغذية</span></span>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Section d'accueil -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="hero-badge">
-                        <i class="fas fa-certificate"></i>
-                        <span>Nutritionniste certifiée</span>
-                    </div>
-                    <h1 class="hero-title">
-                        Transformez votre santé grâce à
-                        <span class="gradient-text">une nutrition personnalisée</span>
-                    </h1>
-                    <p class="hero-description">
-                        Bienvenue ! Je suis Dalel Staali Bel Hadj, nutritionniste certifiée avec plus de 8 ans d'expérience.
-                        J'accompagne chacun vers ses objectifs grâce à une nutrition fondée sur la science et une approche globale.
-                    </p>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">Clients accompagnés</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">8+</div>
-                            <div class="stat-label">Ans d'expérience</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">95%</div>
-                            <div class="stat-label">Taux de réussite</div>
-                        </div>
-                    </div>
-                    <div class="hero-actions">
-                        <a href="#contact" class="btn btn-primary">
-                            <i class="fas fa-calendar-alt"></i>
-                            Réserver une consultation
-                        </a>
-                        <a href="#services" class="btn btn-secondary">
-                            <i class="fas fa-leaf"></i>
-                            Découvrir les services
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="image-container">
-                        <div class="image-background"></div>
-                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=900&h=900&fit=crop&auto=format" alt="Alimentation saine et colorée" class="hero-img">
-                        <div class="image-decoration">
-                            <div class="decoration-circle circle-1"></div>
-                            <div class="decoration-circle circle-2"></div>
-                            <div class="decoration-circle circle-3"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section À propos -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">À propos</span>
-                <h2 class="section-title">Votre partenaire bien-être</h2>
-                <p class="section-description">
-                    Une expertise scientifique et un accompagnement humain vers une santé durable
-                </p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="about-intro">
-                        <h3>Passionnée par votre santé</h3>
-                        <p>
-                            Mon parcours dans la nutrition a commencé par ma propre transformation. Après avoir connu
-                            des troubles digestifs et une fatigue chronique, j'ai découvert l'impact profond d'une nutrition personnalisée.
-                        </p>
-                    </div>
-                    <div class="credentials">
-                        <h4>Diplômes et certifications</h4>
-                        <ul class="credentials-list">
-                            <li>
-                                <i class="fas fa-graduation-cap"></i>
-                                <div>
-                                    <strong>Master en nutrition clinique</strong>
-                                    <span>Université des sciences de la santé, 2016</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-certificate"></i>
-                                <div>
-                                    <strong>Nutritionniste certifiée (CNS)</strong>
-                                    <span>Conseil de certification des spécialistes en nutrition</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-award"></i>
-                                <div>
-                                    <strong>Praticienne en médecine fonctionnelle</strong>
-                                    <span>Institut de médecine fonctionnelle</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-heart"></i>
-                                <div>
-                                    <strong>Coach en nutrition intégrative</strong>
-                                    <span>Institut de nutrition intégrative</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="about-specialties">
-                    <h4>Domaines d'expertise</h4>
-                    <div class="specialties-grid">
-                        <div class="specialty-card">
-                            <div class="specialty-icon">
-                                <i class="fas fa-heartbeat"></i>
-                            </div>
-                            <h5>Santé métabolique</h5>
-                            <p>Gestion du diabète, équilibre du poids et récupération métabolique</p>
-                        </div>
-                        <div class="specialty-card">
-                            <div class="specialty-icon">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                            <h5>Santé intestinale et mentale</h5>
-                            <p>Bien-être digestif, microbiote et soutien de la santé mentale</p>
-                        </div>
-                        <div class="specialty-card">
-                            <div class="specialty-icon">
-                                <i class="fas fa-dumbbell"></i>
-                            </div>
-                            <h5>Nutrition sportive</h5>
-                            <p>Performance et récupération pour les sportifs et les personnes actives</p>
-                        </div>
-                        <div class="specialty-card">
-                            <div class="specialty-icon">
-                                <i class="fas fa-baby"></i>
-                            </div>
-                            <h5>Santé féminine</h5>
-                            <p>Équilibre hormonal, fertilité et nutrition prénatale et postnatale</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Services -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Services</span>
-                <h2 class="section-title">Des solutions nutritionnelles complètes</h2>
-                <p class="section-description">
-                    Des programmes personnalisés conçus pour répondre à vos objectifs de santé et à votre mode de vie
-                </p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card featured">
-                    <div class="service-badge">Le plus populaire</div>
-                    <div class="service-icon">
-                        <i class="fas fa-user-md"></i>
-                    </div>
-                    <h3>Consultation nutritionnelle individuelle</h3>
-                    <p>Bilan complet et élaboration d'un programme nutritionnel personnalisé</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Première consultation de 90 minutes</li>
-                        <li><i class="fas fa-check"></i> Analyse détaillée des antécédents médicaux</li>
-                        <li><i class="fas fa-check"></i> Élaboration de menus personnalisés</li>
-                        <li><i class="fas fa-check"></i> Recommandations en matière de compléments alimentaires</li>
-                        <li><i class="fas fa-check"></i> 4 semaines de suivi et d'accompagnement</li>
-                    </ul>
-                    <div class="service-price">
-                        <span class="price">295 $</span>
-                        <span class="price-note">par séance</span>
-                    </div>
-                    <a href="#contact" class="btn btn-primary">Réserver maintenant</a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <h3>Planification et préparation des repas</h3>
-                    <p>Menus hebdomadaires personnalisés, listes de courses et guides de préparation</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Menus sur 7 jours</li>
-                        <li><i class="fas fa-check"></i> Listes de courses</li>
-                        <li><i class="fas fa-check"></i> Instructions de préparation</li>
-                        <li><i class="fas fa-check"></i> Adaptation des recettes</li>
-                    </ul>
-                    <div class="service-price">
-                        <span class="price">149 $</span>
-                        <span class="price-note">par semaine</span>
-                    </div>
-                    <a href="#contact" class="btn btn-secondary">En savoir plus</a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-flask"></i>
-                    </div>
-                    <h3>Bilans fonctionnels</h3>
-                    <p>Analyses de laboratoire approfondies pour identifier les causes sous-jacentes des problèmes de santé</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Bilan métabolique complet</li>
-                        <li><i class="fas fa-check"></i> Analyse du microbiote intestinal</li>
-                        <li><i class="fas fa-check"></i> Tests de sensibilité alimentaire</li>
-                        <li><i class="fas fa-check"></i> Évaluation des carences nutritionnelles</li>
-                    </ul>
-                    <div class="service-price">
-                        <span class="price">485 $</span>
-                        <span class="price-note">forfait complet</span>
-                    </div>
-                    <a href="#contact" class="btn btn-secondary">En savoir plus</a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Programmes de groupe</h3>
-                    <p>Programmes intensifs d'accompagnement en groupe sur 8 semaines pour adopter durablement de nouvelles habitudes de vie</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Séances de groupe hebdomadaires</li>
-                        <li><i class="fas fa-check"></i> Communauté d'entraide</li>
-                        <li><i class="fas fa-check"></i> Ateliers éducatifs</li>
-                        <li><i class="fas fa-check"></i> Suivi des progrès et des objectifs</li>
-                    </ul>
-                    <div class="service-price">
-                        <span class="price">197 $</span>
-                        <span class="price-note">programme de 8 semaines</span>
-                    </div>
-                    <a href="#contact" class="btn btn-secondary">Rejoindre le programme</a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-laptop"></i>
-                    </div>
-                    <h3>Consultations à distance</h3>
-                    <p>Des séances en ligne pratiques, accessibles aux clients du monde entier</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Consultations par visioconférence</li>
-                        <li><i class="fas fa-check"></i> Plans alimentaires numériques</li>
-                        <li><i class="fas fa-check"></i> Suivi des progrès en ligne</li>
-                        <li><i class="fas fa-check"></i> Assistance par e-mail</li>
-                    </ul>
-                    <div class="service-price">
-                        <span class="price">245 $</span>
-                        <span class="price-note">par séance</span>
-                    </div>
-                    <a href="#contact" class="btn btn-secondary">Réserver à distance</a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3>Bien-être en entreprise</h3>
-                    <p>Séminaires sur la nutrition au travail et programmes de bien-être destinés aux employés</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Séances de sensibilisation pendant la pause déjeuner</li>
-                        <li><i class="fas fa-check"></i> Défis bien-être</li>
-                        <li><i class="fas fa-check"></i> Conseils pour la restauration collective</li>
-                        <li><i class="fas fa-check"></i> Bilans de santé des employés</li>
-                    </ul>
-                    <div class="service-price">
-                        <span class="price">Sur devis</span>
-                        <span class="price-note">tarification personnalisée</span>
-                    </div>
-                    <a href="#contact" class="btn btn-secondary">Demander un devis</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Ma méthode -->
-    <section id="approach" class="approach">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Ma méthode</span>
-                <h2 class="section-title">Une philosophie globale du bien-être</h2>
-                <p class="section-description">
-                    Une approche globale qui prend en compte la personne dans son ensemble, et pas seulement ses symptômes
-                </p>
-            </div>
-            <div class="approach-content">
-                <div class="approach-philosophy">
-                    <div class="philosophy-text">
-                        <h3>La science au service de l'humain</h3>
-                        <p>
-                            Je suis convaincue qu'une santé optimale repose sur un équilibre entre une approche nutritionnelle
-                            fondée sur des données scientifiques fiables et une compréhension approfondie de la situation,
-                            des préférences et des contraintes quotidiennes propres à chaque personne.
-                        </p>
-                        <blockquote>
-                            « La nutrition n'est pas une solution universelle. Votre parcours vers le bien-être doit être aussi unique que vous. »
-                            <cite>- Dalel Staali Bel Hadj</cite>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="approach-steps">
-                    <div class="step-item">
-                        <div class="step-number">01</div>
-                        <div class="step-content">
-                            <h4>Écouter et comprendre</h4>
-                            <p>Étudier en profondeur vos antécédents de santé, vos objectifs et vos difficultés actuelles pour établir un bilan complet</p>
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-number">02</div>
-                        <div class="step-content">
-                            <h4>Analyser et évaluer</h4>
-                            <p>Examiner les résultats d'analyses, les habitudes alimentaires et le mode de vie afin d'identifier les causes sous-jacentes</p>
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-number">03</div>
-                        <div class="step-content">
-                            <h4>Concevoir et mettre en œuvre</h4>
-                            <p>Créer un programme nutritionnel personnalisé qui s'intègre naturellement à votre quotidien</p>
-                        </div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-number">04</div>
-                        <div class="step-content">
-                            <h4>Accompagner et ajuster</h4>
-                            <p>Vous guider dans la durée et adapter le programme en fonction de vos progrès et de vos retours</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Témoignages -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Témoignages</span>
-                <h2 class="section-title">Des parcours couronnés de succès</h2>
-                <p class="section-description">
-                    Des transformations vécues par des personnes qui m'ont fait confiance pour les accompagner vers le bien-être
-                </p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <blockquote>
-                        « Dalel a complètement transformé ma relation avec la nourriture. J'ai perdu environ 16 kg et mon niveau d'énergie a considérablement augmenté. Son approche est durable et vraiment agréable ! »
-                    </blockquote>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <strong>Maria Rodriguez</strong>
-                            <span>Responsable marketing</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card featured">
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <blockquote>
-                        « Après des années de troubles digestifs, l'approche fonctionnelle de Dalel m'a enfin apporté des réponses. Le protocole de rééquilibrage intestinal qu'elle a conçu a complètement changé ma vie. »
-                    </blockquote>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <strong>David Chen</strong>
-                            <span>Ingénieur logiciel</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <blockquote>
-                        « En tant que sportive, j'avais besoin d'une spécialiste qui comprenne la nutrition liée à la performance. Le programme de nutrition sportive de Dalel m'a aidée à battre mon record personnel au marathon ! »
-                    </blockquote>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <strong>Jessica Thompson</strong>
-                            <span>Coureuse de marathon</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Blog -->
-    <section id="blog" class="blog">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Conseils récents</span>
-                <h2 class="section-title">Blog nutrition</h2>
-                <p class="section-description">
-                    Des articles fondés sur des données scientifiques et des conseils pratiques pour vous accompagner vers le bien-être
-                </p>
-            </div>
-            <div class="blog-grid">
-                <article class="blog-card featured">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=250&fit=crop" alt="Aliments favorisant la santé intestinale">
-                        <div class="blog-category">Santé intestinale</div>
-                    </div>
-                    <div class="blog-content">
-                        <h3><a href="#" class="blog-link" data-blog="gut-health">Le guide complet pour prendre soin naturellement de votre intestin</a></h3>
-                        <p>Découvrez des stratégies scientifiquement étayées pour rétablir votre santé digestive et optimiser votre microbiote...</p>
-                        <div class="blog-meta">
-                            <span class="blog-date"><i class="fas fa-calendar"></i> 15 janvier 2025</span>
-                            <span class="blog-read-time"><i class="fas fa-clock"></i> 8 min de lecture</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=200&fit=crop" alt="Préparation des repas">
-                        <div class="blog-category">Planification des repas</div>
-                    </div>
-                    <div class="blog-content">
-                        <h3><a href="#" class="blog-link" data-blog="meal-prep">Maîtriser la préparation des repas : 5 stratégies pour les professionnels débordés</a></h3>
-                        <p>Des techniques pour gagner du temps et révolutionner la planification de vos repas hebdomadaires...</p>
-                        <div class="blog-meta">
-                            <span class="blog-date"><i class="fas fa-calendar"></i> 10 janvier 2025</span>
-                            <span class="blog-read-time"><i class="fas fa-clock"></i> 6 min de lecture</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=200&fit=crop" alt="Aliments anti-inflammatoires">
-                        <div class="blog-category">Alimentation anti-inflammatoire</div>
-                    </div>
-                    <div class="blog-content">
-                        <h3><a href="#" class="blog-link" data-blog="anti-inflammatory">10 aliments anti-inflammatoires puissants à intégrer à votre alimentation</a></h3>
-                        <p>Combattez naturellement l'inflammation chronique grâce à ces aliments riches en nutriments...</p>
-                        <div class="blog-meta">
-                            <span class="blog-date"><i class="fas fa-calendar"></i> 5 janvier 2025</span>
-                            <span class="blog-read-time"><i class="fas fa-clock"></i> 5 min de lecture</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="blog-cta">
-                <a href="#" class="btn btn-secondary">Voir tous les articles</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Contact</span>
-                <h2 class="section-title">Prêt à transformer votre santé ?</h2>
-                <p class="section-description">
-                    Commencez aujourd'hui votre parcours bien-être personnalisé
-                </p>
-            </div>
-            <div class="contact-content">                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>Adresse du cabinet</h4>
-                        <p>123 avenue du Bien-être<br>Quartier de la Santé, CA 90210</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>Téléphone</h4>
-                        <p>(555) 123-WELL<br>Du lundi au vendredi, de 9 h à 18 h (heure du Pacifique)</p>
-                    </div>
-                </div>                           
-            </div>
-            <div class="contact-form contact-cta">
-                <h3>Échangeons sur vos objectifs</h3>
-                <p>Écrivez-moi directement par e-mail pour discuter de votre situation et choisir l'accompagnement adapté.</p>
-                <br>
-                <a class="btn btn-primary" href="mailto:hello@dalelstaali.com">
-                    <i class="fas fa-envelope"></i>
-                    Envoyer un e-mail
-                </a>
-            </div>            
-        </div>
-    </section>
-
-    <!-- Pied de page -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <i class="fas fa-leaf"></i>
-                        <span>Dalel Staali Bel Hadj</span>
-                    </div>                    
-                    <div class="footer-social">
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#services">Consultations individuelles</a></li>
-                        <li><a href="#services">Planification des repas</a></li>
-                        <li><a href="#services">Bilans fonctionnels</a></li>
-                        <li><a href="#services">Programmes de groupe</a></li>
-                        <li><a href="#services">Consultations à distance</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Ressources</h4>
-                    <ul>
-                        <li><a href="#blog">Articles du blog</a></li>
-                        <li><a href="#">Plans alimentaires</a></li>
-                        <li><a href="#">Recettes</a></li>
-                        <li><a href="#">Guides nutritionnels</a></li>
-                        <li><a href="#">Compléments alimentaires</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Restons en contact</h4>
-                    <ul>
-                        <li><a href="#contact">Coordonnées</a></li>
-                        <li><a href="#">Réserver une consultation</a></li>
-                        <li><a href="#">Lettre d'information</a></li>
-                        <li><a href="#">Questions fréquentes</a></li>
-                        <li><a href="#">Politique de confidentialité</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="footer-copyright">
-                    <p>&copy; 2025 Dalel Staali Bel Hadj. Tous droits réservés.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bouton de retour en haut de page -->
-    <button id="back-to-top" class="back-to-top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <!-- Fenêtre contextuelle du blog -->
-    <div id="blog-modal" class="blog-modal">
-        <div class="blog-modal-overlay"></div>
-        <div class="blog-modal-content">
-            <div class="blog-modal-header">
-                <button class="blog-modal-close">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="blog-modal-body">
-                <div class="blog-modal-meta">
-                    <span class="blog-modal-category"></span>
-                    <span class="blog-modal-date"></span>
-                    <span class="blog-modal-read-time"></span>
-                </div>
-                <h1 class="blog-modal-title"></h1>
-                <div class="blog-modal-author">
-                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=160&h=160&fit=crop&auto=format" alt="Alimentation saine" class="author-avatar">
-                    <div class="author-info">
-                        <strong>Dalel Staali Bel Hadj</strong>
-                        <span>Spécialiste certifiée en nutrition</span>
-                    </div>
-                </div>
-                <div class="blog-modal-image">
-                    <img src="" alt="" class="blog-featured-image">
-                </div>
-                <div class="blog-modal-text">
-                    <!-- Le contenu de l'article sera inséré ici -->
-                </div>
-                <div class="blog-modal-footer">
-                    <div class="blog-social-share">
-                        <h4>Partager cet article</h4>
-                        <div class="share-buttons">
-                            <button class="share-btn share-facebook">
-                                <i class="fab fa-facebook-f"></i>
-                                <span>Facebook</span>
-                            </button>
-                            <button class="share-btn share-twitter">
-                                <i class="fab fa-twitter"></i>
-                                <span>Twitter</span>
-                            </button>
-                            <button class="share-btn share-linkedin">
-                                <i class="fab fa-linkedin-in"></i>
-                                <span>LinkedIn</span>
-                            </button>
-                            <button class="share-btn share-copy">
-                                <i class="fas fa-link"></i>
-                                <span>Copier le lien</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="container hero__highlights" aria-label="Les points forts du cabinet">
+      <div class="highlight">
+        <span class="highlight__icon" aria-hidden="true">⌖</span>
+        <strong>Centre Urbain Nord, Tunis</strong>
+      </div>
+      <div class="highlight">
+        <span class="highlight__icon highlight__icon--peach" aria-hidden="true">♡</span>
+        <strong>Un suivi adapté à vos besoins</strong>
+      </div>
+      <a class="highlight" href="https://wa.me/21690002090?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous">
+        <span class="highlight__icon" aria-hidden="true">▣</span>
+        <strong>Consultation sur rendez-vous</strong>
+      </a>
     </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- CONSULTATIONS -->
+  <section class="section" id="consultations">
+    <div class="container">
+      <header class="section__head">
+        <p class="eyebrow">Les consultations</p>
+        <h2>À chaque besoin, son accompagnement</h2>
+        <p class="lead">Une approche personnalisée, au service de votre santé et de votre bien-être.</p>
+      </header>
+
+      <div class="cards">
+        <article class="card card--feature">
+          <div class="icon">⚖️</div>
+          <h3>Perte de poids</h3>
+          <p>Un accompagnement adapté pour avancer vers votre poids d’équilibre.</p>
+          <ul class="checks">
+            <li>Bilan complet</li>
+            <li>Programme sur mesure</li>
+            <li>Suivi régulier</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="icon">🥗</div>
+          <h3>Rééquilibrage alimentaire</h3>
+          <p>Retrouvez des habitudes alimentaires équilibrées, sans renoncer au plaisir.</p>
+        </article>
+        <article class="card">
+          <div class="icon">👩‍👧</div>
+          <h3>Nutrition de la femme et de l’enfant</h3>
+          <p>Une alimentation adaptée à chaque étape de la vie, pour les petits et les grands.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🩺</div>
+          <h3>Diabète et maladies chroniques</h3>
+          <p>Des conseils nutritionnels personnalisés pour accompagner votre santé au quotidien.</p>
+        </article>
+        <article class="card">
+          <div class="icon">💧</div>
+          <h3>Drainage lymphatique</h3>
+          <p>Un soin dédié à votre bien-être et à une sensation de légèreté.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🌿</div>
+          <h3>Madérothérapie</h3>
+          <p>Un accompagnement corporel qui complète votre démarche de bien-être.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HEALTHY -->
+  <section class="section section--tint" id="accompagnement">
+    <div class="container healthy">
+      <div class="healthy__visual">
+        <img src="https://dalel-connect-pro.lovable.app/assets/healthy-bowl-C45Hv_Ds.jpg" alt="Assiette équilibrée et colorée, smoothie vert et fruits frais" loading="lazy">
+        <span class="healthy__tag"><strong>Healthy</strong> sans frustration</span>
+      </div>
+      <div class="healthy__text">
+        <p class="eyebrow">Healthy lifestyle</p>
+        <h2>Votre glow up commence dans l’assiette</h2>
+        <p class="lead">Manger mieux, se sentir légère et pleine d’énergie : des habitudes simples et durables, adaptées à votre quotidien.</p>
+        <ul class="pillars">
+          <li><strong>Alimentation</strong><span>Équilibrée et gourmande</span></li>
+          <li><strong>Hydratation</strong><span>Le réflexe bien-être</span></li>
+          <li><strong>Énergie</strong><span>Au quotidien</span></li>
+          <li><strong>Confiance</strong><span>En soi et en son corps</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARCOURS -->
+  <section class="section">
+    <div class="container">
+      <header class="section__head">
+        <p class="eyebrow">Votre parcours</p>
+        <h2>Un premier pas, puis on avance ensemble</h2>
+        <p class="lead">Trois étapes pour un accompagnement qui vous correspond.</p>
+      </header>
+      <ol class="steps">
+        <li class="step">
+          <span class="step__num">01</span>
+          <h3>Faisons connaissance</h3>
+          <p>Contactez le cabinet par téléphone ou sur WhatsApp pour prendre rendez-vous.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">02</span>
+          <h3>Votre bilan nutritionnel</h3>
+          <p>Un temps d’écoute pour comprendre vos habitudes, vos besoins et vos objectifs.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">03</span>
+          <h3>Un plan qui vous ressemble</h3>
+          <p>Un programme personnalisé et un suivi pour avancer ensemble, à votre rythme.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- AVIS -->
+  <section class="section section--tint" id="avis">
+    <div class="container">
+      <header class="section__head">
+        <p class="eyebrow">Vos témoignages</p>
+        <h2>La confiance, au cœur du suivi</h2>
+      </header>
+      <div class="reviews">
+        <div class="score">
+          <strong>4,4/5</strong>
+          <div class="stars" aria-hidden="true">★★★★<span>★</span></div>
+          <span>7 avis Google</span>
+        </div>
+        <figure class="review review--big">
+          <blockquote>« Madame Dalel fait preuve d’un professionnalisme exemplaire et d’une écoute attentive envers ses patients. Elle prend le temps de comprendre chaque situation individuelle avant de proposer des conseils personnalisés, clairs et efficaces. »</blockquote>
+          <figcaption><span class="avatar">IK</span><span><strong>Ismail K.</strong><small>Avis Google</small></span></figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>« Je recommande vivement. Bonne continuation. »</blockquote>
+          <figcaption><span class="avatar">AM</span><span><strong>Afef M.</strong><small>Avis Google</small></span></figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>« Bravo, une bonne adresse. »</blockquote>
+          <figcaption><span class="avatar">WK</span><span><strong>Wided K.</strong><small>Avis Google</small></span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container contact">
+      <div class="contact__text">
+        <p class="eyebrow">Au plaisir de vous rencontrer</p>
+        <h2>Votre équilibre commence par une rencontre.</h2>
+        <ul class="contact__list">
+          <li><span class="contact__icon">📍</span><div><strong>Le cabinet</strong><span>Express Médical, Centre Urbain Nord, Tunis</span></div></li>
+          <li><span class="contact__icon">📞</span><div><strong>Appelez-nous</strong><span><a href="tel:+21690002090">90 002 090</a> · <a href="tel:+21690002080">90 002 080</a></span></div></li>
+          <li><span class="contact__icon">🕒</span><div><strong>Horaires &amp; rendez-vous</strong><span>Contactez-nous sur WhatsApp</span></div></li>
+        </ul>
+        <a class="btn btn--primary" href="https://wa.me/21690002090?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous">Prendre rendez-vous sur WhatsApp</a>
+      </div>
+      <div class="contact__map">
+        <iframe title="Carte — Centre Urbain Nord, Tunis" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=36.8468581,10.1977923&z=15&output=embed"></iframe>
+        <div class="contact__map-bar">
+          <span>Centre Urbain Nord · Tunis</span>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=36.8468581%2C10.1977923" target="_blank" rel="noopener">Itinéraire</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#accueil"><img src="https://dalel-connect-pro.lovable.app/assets/logo-transparent-BK4w3obT.png" alt="Nutri&co — Nutrition & Amincissement" class="footer__logo"></a>
+    <p>© <span id="year">2026</span> Dalel Staali Bel Hadj. Tous droits réservés.</p>
+    <div class="socials">
+      <a href="https://www.instagram.com/dalel_staali_belhadj/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61575543054486" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8V6c0-.9.2-1.3 1.4-1.300H17V2h-2.600C11.2 2 10 3.7 10 6v2H8v3h2v11h4V11h2.600L17 8h-3z"/></svg>
+      </a>
+      <a href="https://wa.me/21690002090?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.500A11.9 11.9 0 0 0 12 0C5.4 0 .1 5.3.1 11.900c0 2.1.6 4.1 1.6 5.900L0 24l6.4-1.700a11.9 11.9 0 0 0 5.6 1.400c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.300z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
-```
